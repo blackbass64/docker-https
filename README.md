@@ -1,6 +1,6 @@
 # 🐳 5 steps to set up reverse proxy and HTTPS (SSL certificate) for Docker container
 
-1. Create Docker compose file for nginx-proxy same as [nginx-proxy.yaml](https://github.com/atbee/docker-https/blob/main/nginx-proxy.yaml)
+1. Create Docker compose file for nginx-proxy stacks same as [nginx-proxy.yaml](https://github.com/atbee/docker-https/blob/main/nginx-proxy.yaml)
 
 2. Run nginx-proxy stacks
 
@@ -18,6 +18,7 @@ $ docker-compose -f nginx-proxy.yaml up -d
 4. Start/Restart the container
 
 ```bash
+# example
 $ docker-compose -f whoami.yaml up -d
 ```
 
