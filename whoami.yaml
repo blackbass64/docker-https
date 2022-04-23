@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  whoami:
+    image: jwilder/whoami
+    container_name: whoami
+    expose:
+      - "8000"
+    environment:
+      - VIRTUAL_HOST=<YOUR_VIRTUAL_HOST>  # fix it
+      - VIRTUAL_PORT=8000
+      - LETSENCRYPT_HOST=<YOUR_LETSENCRYPT_HOST>  # fix it
+      - LETSENCRYPT_EMAIL=<YOUR_LETSENCRYPT_EMAIL>  # fix it
+    network_mode: bridge
